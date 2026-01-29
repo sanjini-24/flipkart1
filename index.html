@@ -9,6 +9,7 @@
                     height: 30px;
                     margin-right: 30px;
                     border: 1px solid;
+                    background-color: #d8e1ef;
                     
                     
                 }
@@ -19,6 +20,12 @@
                     font size: 16px;
                     line-height: 24px;
                 }
+                .grid{
+                    display: grid;grid-template-columns: auto auto auto auto auto auto auto auto;
+                }
+                .menu{
+                    display: grid;grid-template-columns: auto auto auto auto auto auto auto auto;
+                }
             </style>
 
 
@@ -27,19 +34,70 @@
 </head>
 <body>
     <section>
-        <nav>
+        <nav class="grid">
+            <div>
             <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNSIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI1IDI0IiBmaWxsPSJub25lIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzExNzg3Xzg3NzY3KSI+CjxwYXRoIGQ9Ik00LjUgMTJIMjAuNSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxLjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cGF0aCBkPSJNNC41IDYuMjVIMjAuNSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxLjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cGF0aCBkPSJNNC41IDE3Ljc1SDIwLjUiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMS40IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9nPgo8ZGVmcz4KPGNsaXBQYXRoIGlkPSJjbGlwMF8xMTc4N184Nzc2NyI+CjxyZWN0IHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0id2hpdGUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuNSkiLz4KPC9jbGlwUGF0aD4KPC9kZWZzPgo8L3N2Zz4K"/>
+            </div>
+            <div>
             <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-11f9e2.svg" width="160" height="40">
+            </div>
+            <div>
             <a class="flipkart"><i class="lni lni-search-1" style="height: 10px;"></i><input type="text" placeholder="search for products,brands and more" value="" class="search"></a>
+            </div>
+            <div>
             <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-6bae67.svg" width="44" height="24"/><span class="login">Login</span>
+            </div>
+            <div>
             <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-43eb4e.svg" width="24" height="24 "><span>Cart</span>
-        <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-134a49.svg"/><span>Become a Seller</span>
-        <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_3verticalDots-c2bef0.svg"/>
+            </div>
+            <div>
+            <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-134a49.svg"/><span>Become a Seller</span>
+            </div>
+            <div>
+            <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_3verticalDots-c2bef0.svg"/>
+            </div>
         
         </nav>
+    </section>
+    <section>
+        <section class="menu">
+            <div>
+               <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/e00302d428f5c7be.png?q=100" width="64" height="64"/>
+               <p>Mintues</p>
+            </div>
+            <div>
+                <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/5f2ee7f883cdb774.png?q=100"width="64" height="64"/>
+                <p>Mobiles & Tables</p>
+            </div>
+            <div>
+                <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/ff559cb9d803d424.png?q=100"/>
+                <p>Fashion</p>
+            </div>
+            <div>
+                <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/af646c36d74c4be9.png?q=100"/>
+                <p>Electroics</p>
+            </div>
+            <div>
+                <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/e90944802d996756.jpg?q=100"/>
+                <p>TV & appliances</p>
+            </div>
+            <div>
+               <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/1788f177649e6991.png?q=100"/>
+               <p>Home & Furniture</p>
+            </div>
+            <div>
+                <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/3c647c2e0d937dc5.png?q=100"/>
+                <p>Flight Bookings</p>
+            </div>
+            <div>
+                <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/b3020c99672953b9.png?q=100"/>
+                <p>Beauty Food</p>
+            </div>
+        </section>
         <div>
-
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/2020/340/image/66faf3950cda0b7a.png?q=60" width="100%"/>
         </div>
+
     </section>
     
 </body>
