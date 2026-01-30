@@ -1,104 +1,341 @@
 <!DOCTYPE html>
-<html >
+<html>
+
 <head>
-            <link href="https://cdn.lineicons.com/5.0/lineicons.css" rel="stylesheet" />
-            <style>
-                .search{
-                    width: 400px;
-                    border-radius: 8px;
-                    height: 30px;
-                    margin-right: 30px;
-                    border: 1px solid;
-                    background-color: #d8e1ef;
-                    
-                    
-                }
-                .flipkart{
-                    margin-left: 20px;
-                }
-                .login{
-                    font size: 16px;
-                    line-height: 24px;
-                }
-                .grid{
-                    display: grid;grid-template-columns: auto auto auto auto auto auto auto auto;
-                }
-                .menu{
-                    display: grid;grid-template-columns: auto auto auto auto auto auto auto auto;
-                }
-            </style>
+    <link href="https://cdn.lineicons.com/5.0/lineicons.css" rel="stylesheet" />
+    <style>
+        .search {
+            width: 400px;
+            border-radius: 8px;
+            height: 30px;
+            margin-right: 30px;
+            border: 1px solid;
+            background-color: #d8e1ef;
 
 
-   
-    
+        }
+
+        .flipkart {
+            margin-left: 20px;
+        }
+
+        .login {
+            font size: 16px;
+            line-height: 24px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto auto auto;
+        }
+
+        .menu {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto auto auto;
+        }
+
+        .orders {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto;
+        }
+
+        .cart1inside {
+            display: grid;
+            grid-template-columns: auto auto;
+
+            padding: 1px;
+            margin: 1px;
+        }
+
+        .join {
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+
+        .part {
+            border: 1px solid black;
+            margin: 10px;
+            width: 160px;
+            height: 220px
+        }
+
+        .bigbox {
+            border: 1px solid black;
+            margin: 30px;
+            width: 400px;
+            height: 600px
+        }
+        .banner{
+            margin: 20px;
+            padding: 10px;
+        }
+    </style>
+
+
+
+
 </head>
+
 <body>
     <section>
         <nav class="grid">
             <div>
-            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNSIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI1IDI0IiBmaWxsPSJub25lIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzExNzg3Xzg3NzY3KSI+CjxwYXRoIGQ9Ik00LjUgMTJIMjAuNSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxLjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cGF0aCBkPSJNNC41IDYuMjVIMjAuNSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxLjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cGF0aCBkPSJNNC41IDE3Ljc1SDIwLjUiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMS40IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9nPgo8ZGVmcz4KPGNsaXBQYXRoIGlkPSJjbGlwMF8xMTc4N184Nzc2NyI+CjxyZWN0IHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0id2hpdGUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuNSkiLz4KPC9jbGlwUGF0aD4KPC9kZWZzPgo8L3N2Zz4K"/>
+                <img
+                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNSIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI1IDI0IiBmaWxsPSJub25lIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzExNzg3Xzg3NzY3KSI+CjxwYXRoIGQ9Ik00LjUgMTJIMjAuNSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxLjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cGF0aCBkPSJNNC41IDYuMjVIMjAuNSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxLjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cGF0aCBkPSJNNC41IDE3Ljc1SDIwLjUiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMS40IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9nPgo8ZGVmcz4KPGNsaXBQYXRoIGlkPSJjbGlwMF8xMTc4N184Nzc2NyI+CjxyZWN0IHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0id2hpdGUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuNSkiLz4KPC9jbGlwUGF0aD4KPC9kZWZzPgo8L3N2Zz4K" />
             </div>
             <div>
-            <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-11f9e2.svg" width="160" height="40">
+                <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-11f9e2.svg"
+                    width="160" height="40">
             </div>
             <div>
-            <a class="flipkart"><i class="lni lni-search-1" style="height: 10px;"></i><input type="text" placeholder="search for products,brands and more" value="" class="search"></a>
+                <a class="flipkart"><i class="lni lni-search-1" style="height: 10px;"></i><input type="text"
+                        placeholder="search for products,brands and more" value="" class="search"></a>
             </div>
             <div>
-            <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-6bae67.svg" width="44" height="24"/><span class="login">Login</span>
+                <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-6bae67.svg"
+                    width="44" height="24" /><span class="login">Login</span>
             </div>
             <div>
-            <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-43eb4e.svg" width="24" height="24 "><span>Cart</span>
+                <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-43eb4e.svg"
+                    width="24" height="24 "><span>Cart</span>
             </div>
             <div>
-            <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-134a49.svg"/><span>Become a Seller</span>
+                <img
+                    src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-134a49.svg" /><span>Become
+                    a Seller</span>
             </div>
             <div>
-            <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_3verticalDots-c2bef0.svg"/>
+                <img
+                    src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_3verticalDots-c2bef0.svg" />
             </div>
-        
+
         </nav>
     </section>
     <section>
         <section class="menu">
             <div>
-               <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/e00302d428f5c7be.png?q=100" width="64" height="64"/>
-               <p>Mintues</p>
+                <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/e00302d428f5c7be.png?q=100" width="64"
+                    height="64" />
+                <p>Mintues</p>
             </div>
             <div>
-                <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/5f2ee7f883cdb774.png?q=100"width="64" height="64"/>
+                <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/5f2ee7f883cdb774.png?q=100" width="64"
+                    height="64" />
                 <p>Mobiles & Tables</p>
             </div>
             <div>
-                <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/ff559cb9d803d424.png?q=100"/>
+                <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/ff559cb9d803d424.png?q=100" />
                 <p>Fashion</p>
             </div>
             <div>
-                <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/af646c36d74c4be9.png?q=100"/>
+                <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/af646c36d74c4be9.png?q=100" />
                 <p>Electroics</p>
             </div>
             <div>
-                <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/e90944802d996756.jpg?q=100"/>
+                <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/e90944802d996756.jpg?q=100" />
                 <p>TV & appliances</p>
             </div>
             <div>
-               <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/1788f177649e6991.png?q=100"/>
-               <p>Home & Furniture</p>
+                <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/1788f177649e6991.png?q=100" />
+                <p>Home & Furniture</p>
             </div>
             <div>
-                <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/3c647c2e0d937dc5.png?q=100"/>
+                <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/3c647c2e0d937dc5.png?q=100" />
                 <p>Flight Bookings</p>
             </div>
             <div>
-                <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/b3020c99672953b9.png?q=100"/>
+                <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/b3020c99672953b9.png?q=100" />
                 <p>Beauty Food</p>
             </div>
         </section>
         <div>
-            <img src="https://rukminim2.flixcart.com/fk-p-flap/2020/340/image/66faf3950cda0b7a.png?q=60" width="100%"/>
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/2020/340/image/66faf3950cda0b7a.png?q=60" width="100%" />
         </div>
 
     </section>
-    
+    <section>
+        <div>
+            <h1>Top Deals</h1>
+        </div>
+        <section class="orders">
+            <div>
+                <img src="https://rukminim1.flixcart.com/image/220/220/xif0q/projector/9/f/t/atom-2x-10-5-ei9027-led-projector-egate-original-imahgxuyvzaghasg.jpeg?q=60"
+                    width="140px" height="120px" />
+                <p>Projector</p><span><b>from$6900</b></span>
+            </div>
+            <div>
+                <img src="https://rukminim1.flixcart.com/image/220/220/kcf4lu80/speaker/mobile-tablet-speaker/h/u/f/srs-xb23-sony-original-imaftk66vjxp86h5.jpeg?q=60"
+                    width="140px" height="120px" />
+                <p>Speaker</p><span><b>From $499</b></span>
+            </div>
+            <div>
+                <img src="https://rukminim1.flixcart.com/image/220/220/xif0q/monitor/i/q/k/-original-imahbzhcdvc6gkhu.jpeg?q=60"
+                    width="140px" height="120px" />
+                <p>Monitor</p><span><b>From $6599</b></span>
+            </div>
+            <div>
+                <img src="https://rukminim1.flixcart.com/image/220/220/xif0q/point-shoot-camera/c/i/s/4k-video-compact-cameras-with-16x-digital-zoom-anti-shake-2-original-imahgpuhpgzamna2.jpeg?q=60"
+                    width="140px" height="120px" />
+                <p>Camera</p><span><b> From $ 5778</b></span>
+            </div>
+            <div>
+                <img src="https://rukminim1.flixcart.com/image/220/220/xif0q/smartwatch/5/v/s/-original-imagxrhetgfuebnn.jpeg?q=60"
+                    width="108px" height="108px" />
+                <p>Smart Watch</p><span><b> From $ 2543</b></span>
+            </div>
+            <div>
+                <img src="https://rukminim1.flixcart.com/image/220/220/xif0q/printer/s/8/d/-original-imafkykednshkhx5.jpeg?q=60"
+                    width="108px" height="108px" />
+                <p>Printers</p><span><b>From $7864</b></span>
+            </div>
+        </section>
+    </section>
+    <section class="join">
+        <section class="bigbox">
+            <h1><b>TOP DEALS</b></h1>
+            <section class="cart1inside">
+                <div class="part">
+                    <img src="https://rukminim1.flixcart.com/image/380/380/xif0q/shoe/k/e/r/7-sneaker-7-echor-white-blue-original-imahf9ps8wwbzfyv.jpeg?q=60"
+                        width="160px" height="120px" />
+                    <h4>MEN'S CASUAL SHOES</h4>
+                    <h5>MIN 50% OFF</h5>
+                </div>
+                <div class="part">
+                    <img src="https://rukminim1.flixcart.com/image/380/380/xif0q/slipper-flip-flop/i/m/a/-original-imahjystukeydp5n.jpeg?q=60"
+                        width="160px" height="120px" />
+                    <h4>MEN'S SLIPPERS</h4>
+                    <h5>MIN 80% OFF</h5>
+                </div>
+                <div class="part">
+                    <img src="https://rukminim1.flixcart.com/image/380/380/xif0q/smartwatch/p/f/x/43-t10-ultra2-large-diaplay-2-19-blutooth-calling-smartwatch-original-imahyzdk3vwev6br.jpeg?q=60"
+                        width="160px" height="120px" />
+                    <h4>WRIST WATCH </h4>
+                    <h5>MIN 90% OFF</h5>
+                </div>
+                <div class="part">
+                    <img src="https://rukminim1.flixcart.com/image/380/380/xif0q/jean/6/x/t/32-mbb0015-star4well-original-imahdgmsubfqqzvu.jpeg?q=60"
+                        width="160px" height="120px" />
+                    <h4>MEN JEANS</h4>
+                    <h5>MIN 70% OFF</h5>
+                </div>
+            </section>
+        </section>
+        <section>
+
+            <section class="bigbox">
+                <h1><b>TOP DEALS</b></h1>
+                <section class="cart1inside">
+                    <div class="part">
+                        <img src="https://rukminim1.flixcart.com/image/380/380/xif0q/shoe/k/e/r/7-sneaker-7-echor-white-blue-original-imahf9ps8wwbzfyv.jpeg?q=60"
+                            width="160px" height="120px" />
+                        <h4>MEN'S CASUAL SHOES</h4>
+                        <h5>MIN 50% OFF</h5>
+                    </div>
+                    <div class="part">
+                        <img src="https://rukminim1.flixcart.com/image/380/380/xif0q/slipper-flip-flop/i/m/a/-original-imahjystukeydp5n.jpeg?q=60"
+                            width="160px" height="120px" />
+                        <h4>MEN'S SLIPPERS</h4>
+                        <h5>MIN 80% OFF</h5>
+                    </div>
+                    <div class="part">
+                        <img src="https://rukminim1.flixcart.com/image/380/380/xif0q/smartwatch/p/f/x/43-t10-ultra2-large-diaplay-2-19-blutooth-calling-smartwatch-original-imahyzdk3vwev6br.jpeg?q=60"
+                            width="160px" height="120px" />
+                        <h4>WRIST WATCH </h4>
+                        <h5>MIN 90% OFF</h5>
+                    </div>
+                    <div class="part">
+                        <img src="https://rukminim1.flixcart.com/image/380/380/xif0q/jean/6/x/t/32-mbb0015-star4well-original-imahdgmsubfqqzvu.jpeg?q=60"
+                            width="160px" height="120px" />
+                        <h4>MEN JEANS</h4>
+                        <h5>MIN 70% OFF</h5>
+                    </div>
+                </section>
+            </section>
+
+        </section>
+        <div class="banner">
+            <img src="https://d1pdzcnm6xgxlz.cloudfront.net/bottoms/8905875019749-9.jpg" width="300px"
+                height="550px" />
+        </div>
+
+    </section>
+    <section class="join">
+        <section class="bigbox">
+            <h1><b>TOP DEALS</b></h1>
+            <section class="cart1inside">
+                <div class="part">
+                    <img src="https://rukminim1.flixcart.com/image/380/380/xif0q/shoe/k/e/r/7-sneaker-7-echor-white-blue-original-imahf9ps8wwbzfyv.jpeg?q=60"
+                        width="160px" height="120px" />
+                    <h4>MEN'S CASUAL SHOES</h4>
+                    <h5>MIN 50% OFF</h5>
+                </div>
+                <div class="part">
+                    <img src="https://rukminim1.flixcart.com/image/380/380/xif0q/slipper-flip-flop/i/m/a/-original-imahjystukeydp5n.jpeg?q=60"
+                        width="160px" height="120px" />
+                    <h4>MEN'S SLIPPERS</h4>
+                    <h5>MIN 80% OFF</h5>
+                </div>
+                <div class="part">
+                    <img src="https://rukminim1.flixcart.com/image/380/380/xif0q/smartwatch/p/f/x/43-t10-ultra2-large-diaplay-2-19-blutooth-calling-smartwatch-original-imahyzdk3vwev6br.jpeg?q=60"
+                        width="160px" height="120px" />
+                    <h4>WRIST WATCH </h4>
+                    <h5>MIN 90% OFF</h5>
+                </div>
+                <div class="part">
+                    <img src="https://rukminim1.flixcart.com/image/380/380/xif0q/jean/6/x/t/32-mbb0015-star4well-original-imahdgmsubfqqzvu.jpeg?q=60"
+                        width="160px" height="120px" />
+                    <h4>MEN JEANS</h4>
+                    <h5>MIN 70% OFF</h5>
+                </div>
+            </section>
+        </section>
+        <section>
+
+            <section class="bigbox">
+                <h1><b>TOP DEALS</b></h1>
+                <section class="cart1inside">
+                    <div class="part">
+                        <img src="https://rukminim1.flixcart.com/image/380/380/xif0q/shoe/k/e/r/7-sneaker-7-echor-white-blue-original-imahf9ps8wwbzfyv.jpeg?q=60"
+                            width="160px" height="120px" />
+                        <h4>MEN'S CASUAL SHOES</h4>
+                        <h5>MIN 50% OFF</h5>
+                    </div>
+                    <div class="part">
+                        <img src="https://rukminim1.flixcart.com/image/380/380/xif0q/slipper-flip-flop/i/m/a/-original-imahjystukeydp5n.jpeg?q=60"
+                            width="160px" height="120px" />
+                        <h4>MEN'S SLIPPERS</h4>
+                        <h5>MIN 80% OFF</h5>
+                    </div>
+                    <div class="part">
+                        <img src="https://rukminim1.flixcart.com/image/380/380/xif0q/smartwatch/p/f/x/43-t10-ultra2-large-diaplay-2-19-blutooth-calling-smartwatch-original-imahyzdk3vwev6br.jpeg?q=60"
+                            width="160px" height="120px" />
+                        <h4>WRIST WATCH </h4>
+                        <h5>MIN 90% OFF</h5>
+                    </div>
+                    <div class="part">
+                        <img src="https://rukminim1.flixcart.com/image/380/380/xif0q/jean/6/x/t/32-mbb0015-star4well-original-imahdgmsubfqqzvu.jpeg?q=60"
+                            width="160px" height="120px" />
+                        <h4>MEN JEANS</h4>
+                        <h5>MIN 70% OFF</h5>
+                    </div>
+                </section>
+            </section>
+
+        </section>
+        <div class="banner">
+            <img src="https://i.pinimg.com/736x/53/a4/bd/53a4bdd9b3cf523d6d6517fa20f44b57.jpg" width="300px"
+                height="550px" />
+        </div>
+
+
+    </section>
+    <footer>
+        <div>
+
+        </div>
+    </footer>
+
+
 </body>
+
 </html>
