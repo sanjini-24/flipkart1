@@ -27,11 +27,17 @@
         .grid {
             display: grid;
             grid-template-columns: auto auto auto auto auto auto auto auto;
+            background-color: white;
+            
         }
 
         .menu {
             display: grid;
             grid-template-columns: auto auto auto auto auto auto auto auto;
+            background-color: white;
+            border: 1px solid rgb(247, 245, 245);
+            border-radius: 5px;
+            margin: 10px;
         }
 
         .orders {
@@ -63,11 +69,75 @@
             border: 1px solid black;
             margin: 30px;
             width: 400px;
-            height: 600px
+            height: 600px;
+            background-color: white;
         }
-        .banner{
+
+        .banner {
             margin: 20px;
             padding: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            font-style: initial;
+
+        }
+
+        .foot {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto auto;
+            gap: 20px;
+            background-color: black;
+            padding: 20px;
+            height: 200px;
+            margin: 20px;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .hh {
+            color: #fff;
+        }
+
+        .final {
+            display: flex;
+            gap: 70px;
+            background-color: #000;
+            color: white;
+            align-items: center;
+        }
+
+        .imagefinal {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+        }
+
+        .back {
+            background-color: black;
+        }
+
+        .paragraph {
+            font-size: xx-small;
+        }
+
+        .bord {
+            border: 1px solid rgb(235, 228, 228);
+            border-radius: 5px;
+            background-color: #fff;
+            margin: 10px;
+
+
+        }
+
+        .all {
+            background-color:#f1f3f6;
         }
     </style>
 
@@ -77,151 +147,123 @@
 </head>
 
 <body>
-    <section>
-        <nav class="grid">
+    <section class="all">
+        <section>
+            <nav class="grid">
+                <div>
+                    <img
+                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNSIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI1IDI0IiBmaWxsPSJub25lIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzExNzg3Xzg3NzY3KSI+CjxwYXRoIGQ9Ik00LjUgMTJIMjAuNSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxLjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cGF0aCBkPSJNNC41IDYuMjVIMjAuNSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxLjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cGF0aCBkPSJNNC41IDE3Ljc1SDIwLjUiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMS40IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9nPgo8ZGVmcz4KPGNsaXBQYXRoIGlkPSJjbGlwMF8xMTc4N184Nzc2NyI+CjxyZWN0IHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0id2hpdGUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuNSkiLz4KPC9jbGlwUGF0aD4KPC9kZWZzPgo8L3N2Zz4K" />
+                </div>
+                <div>
+                    <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-11f9e2.svg"
+                        width="160" height="40">
+                </div>
+                <div>
+                    <a class="flipkart"><i class="lni lni-search-1" style="height: 10px; color: black;"></i><input
+                            type="text" placeholder="search for products,brands and more" value=""
+                            class="search"></input></a>
+                </div>
+                <div>
+                    <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-6bae67.svg"
+                        width="44" height="24" /><span class="login">Login</span>
+                </div>
+                <div>
+                    <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-43eb4e.svg"
+                        width="24" height="24 "><span>Cart</span>
+                </div>
+                <div>
+                    <img
+                        src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-134a49.svg" /><span>Become
+                        a Seller</span>
+                </div>
+                <div>
+                    <img
+                        src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_3verticalDots-c2bef0.svg" />
+                </div>
+
+            </nav>
+        </section>
+        <section>
+            <section class="menu">
+                <div>
+                    <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/e00302d428f5c7be.png?q=100"
+                        width="64" height="64" />
+                    <p>Mintues</p>
+                </div>
+                <div>
+                    <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/5f2ee7f883cdb774.png?q=100"
+                        width="64" height="64" />
+                    <p>Mobiles & Tables</p>
+                </div>
+                <div>
+                    <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/ff559cb9d803d424.png?q=100" />
+                    <p>Fashion</p>
+                </div>
+                <div>
+                    <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/af646c36d74c4be9.png?q=100" />
+                    <p>Electroics</p>
+                </div>
+                <div>
+                    <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/e90944802d996756.jpg?q=100" />
+                    <p>TV & appliances</p>
+                </div>
+                <div>
+                    <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/1788f177649e6991.png?q=100" />
+                    <p>Home & Furniture</p>
+                </div>
+                <div>
+                    <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/3c647c2e0d937dc5.png?q=100" />
+                    <p>Flight Bookings</p>
+                </div>
+                <div>
+                    <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/b3020c99672953b9.png?q=100" />
+                    <p>Beauty Food</p>
+                </div>
+            </section>
             <div>
-                <img
-                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNSIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI1IDI0IiBmaWxsPSJub25lIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzExNzg3Xzg3NzY3KSI+CjxwYXRoIGQ9Ik00LjUgMTJIMjAuNSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxLjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cGF0aCBkPSJNNC41IDYuMjVIMjAuNSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxLjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cGF0aCBkPSJNNC41IDE3Ljc1SDIwLjUiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMS40IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9nPgo8ZGVmcz4KPGNsaXBQYXRoIGlkPSJjbGlwMF8xMTc4N184Nzc2NyI+CjxyZWN0IHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0id2hpdGUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuNSkiLz4KPC9jbGlwUGF0aD4KPC9kZWZzPgo8L3N2Zz4K" />
-            </div>
-            <div>
-                <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-11f9e2.svg"
-                    width="160" height="40">
-            </div>
-            <div>
-                <a class="flipkart"><i class="lni lni-search-1" style="height: 10px;"></i><input type="text"
-                        placeholder="search for products,brands and more" value="" class="search"></a>
-            </div>
-            <div>
-                <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-6bae67.svg"
-                    width="44" height="24" /><span class="login">Login</span>
-            </div>
-            <div>
-                <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-43eb4e.svg"
-                    width="24" height="24 "><span>Cart</span>
-            </div>
-            <div>
-                <img
-                    src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-134a49.svg" /><span>Become
-                    a Seller</span>
-            </div>
-            <div>
-                <img
-                    src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_3verticalDots-c2bef0.svg" />
+                <img src="https://rukminim2.flixcart.com/fk-p-flap/2020/340/image/66faf3950cda0b7a.png?q=60"
+                    width="100%" />
             </div>
 
-        </nav>
-    </section>
-    <section>
-        <section class="menu">
-            <div>
-                <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/e00302d428f5c7be.png?q=100" width="64"
-                    height="64" />
-                <p>Mintues</p>
-            </div>
-            <div>
-                <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/5f2ee7f883cdb774.png?q=100" width="64"
-                    height="64" />
-                <p>Mobiles & Tables</p>
-            </div>
-            <div>
-                <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/ff559cb9d803d424.png?q=100" />
-                <p>Fashion</p>
-            </div>
-            <div>
-                <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/af646c36d74c4be9.png?q=100" />
-                <p>Electroics</p>
-            </div>
-            <div>
-                <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/e90944802d996756.jpg?q=100" />
-                <p>TV & appliances</p>
-            </div>
-            <div>
-                <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/1788f177649e6991.png?q=100" />
-                <p>Home & Furniture</p>
-            </div>
-            <div>
-                <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/3c647c2e0d937dc5.png?q=100" />
-                <p>Flight Bookings</p>
-            </div>
-            <div>
-                <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/b3020c99672953b9.png?q=100" />
-                <p>Beauty Food</p>
-            </div>
         </section>
-        <div>
-            <img src="https://rukminim2.flixcart.com/fk-p-flap/2020/340/image/66faf3950cda0b7a.png?q=60" width="100%" />
-        </div>
-
-    </section>
-    <section>
-        <div>
-            <h1>Top Deals</h1>
-        </div>
-        <section class="orders">
+        <section class="bord">
             <div>
-                <img src="https://rukminim1.flixcart.com/image/220/220/xif0q/projector/9/f/t/atom-2x-10-5-ei9027-led-projector-egate-original-imahgxuyvzaghasg.jpeg?q=60"
-                    width="140px" height="120px" />
-                <p>Projector</p><span><b>from$6900</b></span>
+                <h1>Top Deals</h1>
             </div>
-            <div>
-                <img src="https://rukminim1.flixcart.com/image/220/220/kcf4lu80/speaker/mobile-tablet-speaker/h/u/f/srs-xb23-sony-original-imaftk66vjxp86h5.jpeg?q=60"
-                    width="140px" height="120px" />
-                <p>Speaker</p><span><b>From $499</b></span>
-            </div>
-            <div>
-                <img src="https://rukminim1.flixcart.com/image/220/220/xif0q/monitor/i/q/k/-original-imahbzhcdvc6gkhu.jpeg?q=60"
-                    width="140px" height="120px" />
-                <p>Monitor</p><span><b>From $6599</b></span>
-            </div>
-            <div>
-                <img src="https://rukminim1.flixcart.com/image/220/220/xif0q/point-shoot-camera/c/i/s/4k-video-compact-cameras-with-16x-digital-zoom-anti-shake-2-original-imahgpuhpgzamna2.jpeg?q=60"
-                    width="140px" height="120px" />
-                <p>Camera</p><span><b> From $ 5778</b></span>
-            </div>
-            <div>
-                <img src="https://rukminim1.flixcart.com/image/220/220/xif0q/smartwatch/5/v/s/-original-imagxrhetgfuebnn.jpeg?q=60"
-                    width="108px" height="108px" />
-                <p>Smart Watch</p><span><b> From $ 2543</b></span>
-            </div>
-            <div>
-                <img src="https://rukminim1.flixcart.com/image/220/220/xif0q/printer/s/8/d/-original-imafkykednshkhx5.jpeg?q=60"
-                    width="108px" height="108px" />
-                <p>Printers</p><span><b>From $7864</b></span>
-            </div>
-        </section>
-    </section>
-    <section class="join">
-        <section class="bigbox">
-            <h1><b>TOP DEALS</b></h1>
-            <section class="cart1inside">
-                <div class="part">
-                    <img src="https://rukminim1.flixcart.com/image/380/380/xif0q/shoe/k/e/r/7-sneaker-7-echor-white-blue-original-imahf9ps8wwbzfyv.jpeg?q=60"
-                        width="160px" height="120px" />
-                    <h4>MEN'S CASUAL SHOES</h4>
-                    <h5>MIN 50% OFF</h5>
+            <section class="orders">
+                <div>
+                    <img src="https://rukminim1.flixcart.com/image/220/220/xif0q/projector/9/f/t/atom-2x-10-5-ei9027-led-projector-egate-original-imahgxuyvzaghasg.jpeg?q=60"
+                        width="140px" height="120px" />
+                    <p>Projector</p><span><b>from$6900</b></span>
                 </div>
-                <div class="part">
-                    <img src="https://rukminim1.flixcart.com/image/380/380/xif0q/slipper-flip-flop/i/m/a/-original-imahjystukeydp5n.jpeg?q=60"
-                        width="160px" height="120px" />
-                    <h4>MEN'S SLIPPERS</h4>
-                    <h5>MIN 80% OFF</h5>
+                <div>
+                    <img src="https://rukminim1.flixcart.com/image/220/220/kcf4lu80/speaker/mobile-tablet-speaker/h/u/f/srs-xb23-sony-original-imaftk66vjxp86h5.jpeg?q=60"
+                        width="140px" height="120px" />
+                    <p>Speaker</p><span><b>From $499</b></span>
                 </div>
-                <div class="part">
-                    <img src="https://rukminim1.flixcart.com/image/380/380/xif0q/smartwatch/p/f/x/43-t10-ultra2-large-diaplay-2-19-blutooth-calling-smartwatch-original-imahyzdk3vwev6br.jpeg?q=60"
-                        width="160px" height="120px" />
-                    <h4>WRIST WATCH </h4>
-                    <h5>MIN 90% OFF</h5>
+                <div>
+                    <img src="https://rukminim1.flixcart.com/image/220/220/xif0q/monitor/i/q/k/-original-imahbzhcdvc6gkhu.jpeg?q=60"
+                        width="140px" height="120px" />
+                    <p>Monitor</p><span><b>From $6599</b></span>
                 </div>
-                <div class="part">
-                    <img src="https://rukminim1.flixcart.com/image/380/380/xif0q/jean/6/x/t/32-mbb0015-star4well-original-imahdgmsubfqqzvu.jpeg?q=60"
-                        width="160px" height="120px" />
-                    <h4>MEN JEANS</h4>
-                    <h5>MIN 70% OFF</h5>
+                <div>
+                    <img src="https://rukminim1.flixcart.com/image/220/220/xif0q/point-shoot-camera/c/i/s/4k-video-compact-cameras-with-16x-digital-zoom-anti-shake-2-original-imahgpuhpgzamna2.jpeg?q=60"
+                        width="140px" height="120px" />
+                    <p>Camera</p><span><b> From $ 5778</b></span>
+                </div>
+                <div>
+                    <img src="https://rukminim1.flixcart.com/image/220/220/xif0q/smartwatch/5/v/s/-original-imagxrhetgfuebnn.jpeg?q=60"
+                        width="108px" height="108px" />
+                    <p>Smart Watch</p><span><b> From $ 2543</b></span>
+                </div>
+                <div>
+                    <img src="https://rukminim1.flixcart.com/image/220/220/xif0q/printer/s/8/d/-original-imafkykednshkhx5.jpeg?q=60"
+                        width="108px" height="108px" />
+                    <p>Printers</p><span><b>From $7864</b></span>
                 </div>
             </section>
         </section>
-        <section>
-
+        <section class="join">
             <section class="bigbox">
                 <h1><b>TOP DEALS</b></h1>
                 <section class="cart1inside">
@@ -251,46 +293,46 @@
                     </div>
                 </section>
             </section>
+            <section>
 
-        </section>
-        <div class="banner">
-            <img src="https://d1pdzcnm6xgxlz.cloudfront.net/bottoms/8905875019749-9.jpg" width="300px"
-                height="550px" />
-        </div>
+                <section class="bigbox">
+                    <h1><b>TOP DEALS</b></h1>
+                    <section class="cart1inside">
+                        <div class="part">
+                            <img src="https://rukminim1.flixcart.com/image/380/380/xif0q/shoe/k/e/r/7-sneaker-7-echor-white-blue-original-imahf9ps8wwbzfyv.jpeg?q=60"
+                                width="160px" height="120px" />
+                            <h4>MEN'S CASUAL SHOES</h4>
+                            <h5>MIN 50% OFF</h5>
+                        </div>
+                        <div class="part">
+                            <img src="https://rukminim1.flixcart.com/image/380/380/xif0q/slipper-flip-flop/i/m/a/-original-imahjystukeydp5n.jpeg?q=60"
+                                width="160px" height="120px" />
+                            <h4>MEN'S SLIPPERS</h4>
+                            <h5>MIN 80% OFF</h5>
+                        </div>
+                        <div class="part">
+                            <img src="https://rukminim1.flixcart.com/image/380/380/xif0q/smartwatch/p/f/x/43-t10-ultra2-large-diaplay-2-19-blutooth-calling-smartwatch-original-imahyzdk3vwev6br.jpeg?q=60"
+                                width="160px" height="120px" />
+                            <h4>WRIST WATCH </h4>
+                            <h5>MIN 90% OFF</h5>
+                        </div>
+                        <div class="part">
+                            <img src="https://rukminim1.flixcart.com/image/380/380/xif0q/jean/6/x/t/32-mbb0015-star4well-original-imahdgmsubfqqzvu.jpeg?q=60"
+                                width="160px" height="120px" />
+                            <h4>MEN JEANS</h4>
+                            <h5>MIN 70% OFF</h5>
+                        </div>
+                    </section>
+                </section>
 
-    </section>
-    <section class="join">
-        <section class="bigbox">
-            <h1><b>TOP DEALS</b></h1>
-            <section class="cart1inside">
-                <div class="part">
-                    <img src="https://rukminim1.flixcart.com/image/380/380/xif0q/shoe/k/e/r/7-sneaker-7-echor-white-blue-original-imahf9ps8wwbzfyv.jpeg?q=60"
-                        width="160px" height="120px" />
-                    <h4>MEN'S CASUAL SHOES</h4>
-                    <h5>MIN 50% OFF</h5>
-                </div>
-                <div class="part">
-                    <img src="https://rukminim1.flixcart.com/image/380/380/xif0q/slipper-flip-flop/i/m/a/-original-imahjystukeydp5n.jpeg?q=60"
-                        width="160px" height="120px" />
-                    <h4>MEN'S SLIPPERS</h4>
-                    <h5>MIN 80% OFF</h5>
-                </div>
-                <div class="part">
-                    <img src="https://rukminim1.flixcart.com/image/380/380/xif0q/smartwatch/p/f/x/43-t10-ultra2-large-diaplay-2-19-blutooth-calling-smartwatch-original-imahyzdk3vwev6br.jpeg?q=60"
-                        width="160px" height="120px" />
-                    <h4>WRIST WATCH </h4>
-                    <h5>MIN 90% OFF</h5>
-                </div>
-                <div class="part">
-                    <img src="https://rukminim1.flixcart.com/image/380/380/xif0q/jean/6/x/t/32-mbb0015-star4well-original-imahdgmsubfqqzvu.jpeg?q=60"
-                        width="160px" height="120px" />
-                    <h4>MEN JEANS</h4>
-                    <h5>MIN 70% OFF</h5>
-                </div>
             </section>
-        </section>
-        <section>
+            <div class="banner">
+                <img src="https://d1pdzcnm6xgxlz.cloudfront.net/bottoms/8905875019749-9.jpg" width="300px"
+                    height="550px" />
+            </div>
 
+        </section>
+        <section class="join">
             <section class="bigbox">
                 <h1><b>TOP DEALS</b></h1>
                 <section class="cart1inside">
@@ -320,22 +362,346 @@
                     </div>
                 </section>
             </section>
+            <section>
+
+                <section class="bigbox">
+                    <h1><b>TOP DEALS</b></h1>
+                    <section class="cart1inside">
+                        <div class="part">
+                            <img src="https://rukminim1.flixcart.com/image/380/380/xif0q/shoe/k/e/r/7-sneaker-7-echor-white-blue-original-imahf9ps8wwbzfyv.jpeg?q=60"
+                                width="160px" height="120px" />
+                            <h4>MEN'S CASUAL SHOES</h4>
+                            <h5>MIN 50% OFF</h5>
+                        </div>
+                        <div class="part">
+                            <img src="https://rukminim1.flixcart.com/image/380/380/xif0q/slipper-flip-flop/i/m/a/-original-imahjystukeydp5n.jpeg?q=60"
+                                width="160px" height="120px" />
+                            <h4>MEN'S SLIPPERS</h4>
+                            <h5>MIN 80% OFF</h5>
+                        </div>
+                        <div class="part">
+                            <img src="https://rukminim1.flixcart.com/image/380/380/xif0q/smartwatch/p/f/x/43-t10-ultra2-large-diaplay-2-19-blutooth-calling-smartwatch-original-imahyzdk3vwev6br.jpeg?q=60"
+                                width="160px" height="120px" />
+                            <h4>WRIST WATCH </h4>
+                            <h5>MIN 90% OFF</h5>
+                        </div>
+                        <div class="part">
+                            <img src="https://rukminim1.flixcart.com/image/380/380/xif0q/jean/6/x/t/32-mbb0015-star4well-original-imahdgmsubfqqzvu.jpeg?q=60"
+                                width="160px" height="120px" />
+                            <h4>MEN JEANS</h4>
+                            <h5>MIN 70% OFF</h5>
+                        </div>
+                    </section>
+                </section>
+
+            </section>
+            <div class="banner">
+                <img src="https://i.pinimg.com/736x/53/a4/bd/53a4bdd9b3cf523d6d6517fa20f44b57.jpg" width="300px"
+                    height="550px" />
+            </div>
+
 
         </section>
-        <div class="banner">
-            <img src="https://i.pinimg.com/736x/53/a4/bd/53a4bdd9b3cf523d6d6517fa20f44b57.jpg" width="300px"
-                height="550px" />
-        </div>
+        <section class="bord">
+            <div>
+                <h1>Top Deals</h1>
+            </div>
+            <section class="orders">
+                <div>
+                    <img src="https://rukminim1.flixcart.com/image/220/220/xif0q/projector/9/f/t/atom-2x-10-5-ei9027-led-projector-egate-original-imahgxuyvzaghasg.jpeg?q=60"
+                        width="140px" height="120px" />
+                    <p>Projector</p><span><b>from$6900</b></span>
+                </div>
+                <div>
+                    <img src="https://rukminim1.flixcart.com/image/220/220/kcf4lu80/speaker/mobile-tablet-speaker/h/u/f/srs-xb23-sony-original-imaftk66vjxp86h5.jpeg?q=60"
+                        width="140px" height="120px" />
+                    <p>Speaker</p><span><b>From $499</b></span>
+                </div>
+                <div>
+                    <img src="https://rukminim1.flixcart.com/image/220/220/xif0q/monitor/i/q/k/-original-imahbzhcdvc6gkhu.jpeg?q=60"
+                        width="140px" height="120px" />
+                    <p>Monitor</p><span><b>From $6599</b></span>
+                </div>
+                <div>
+                    <img src="https://rukminim1.flixcart.com/image/220/220/xif0q/point-shoot-camera/c/i/s/4k-video-compact-cameras-with-16x-digital-zoom-anti-shake-2-original-imahgpuhpgzamna2.jpeg?q=60"
+                        width="140px" height="120px" />
+                    <p>Camera</p><span><b> From $ 5778</b></span>
+                </div>
+                <div>
+                    <img src="https://rukminim1.flixcart.com/image/220/220/xif0q/smartwatch/5/v/s/-original-imagxrhetgfuebnn.jpeg?q=60"
+                        width="108px" height="108px" />
+                    <p>Smart Watch</p><span><b> From $ 2543</b></span>
+                </div>
+                <div>
+                    <img src="https://rukminim1.flixcart.com/image/220/220/xif0q/printer/s/8/d/-original-imafkykednshkhx5.jpeg?q=60"
+                        width="108px" height="108px" />
+                    <p>Printers</p><span><b>From $7864</b></span>
+                </div>
+            </section>
+        </section>
+        <section class="bord">
+            <div>
+                <h1>Top Deals</h1>
+            </div>
+            <section class="orders">
+                <div>
+                    <img src="https://rukminim1.flixcart.com/image/220/220/xif0q/projector/9/f/t/atom-2x-10-5-ei9027-led-projector-egate-original-imahgxuyvzaghasg.jpeg?q=60"
+                        width="140px" height="120px" />
+                    <p>Projector</p><span><b>from$6900</b></span>
+                </div>
+                <div>
+                    <img src="https://rukminim1.flixcart.com/image/220/220/kcf4lu80/speaker/mobile-tablet-speaker/h/u/f/srs-xb23-sony-original-imaftk66vjxp86h5.jpeg?q=60"
+                        width="140px" height="120px" />
+                    <p>Speaker</p><span><b>From $499</b></span>
+                </div>
+                <div>
+                    <img src="https://rukminim1.flixcart.com/image/220/220/xif0q/monitor/i/q/k/-original-imahbzhcdvc6gkhu.jpeg?q=60"
+                        width="140px" height="120px" />
+                    <p>Monitor</p><span><b>From $6599</b></span>
+                </div>
+                <div>
+                    <img src="https://rukminim1.flixcart.com/image/220/220/xif0q/point-shoot-camera/c/i/s/4k-video-compact-cameras-with-16x-digital-zoom-anti-shake-2-original-imahgpuhpgzamna2.jpeg?q=60"
+                        width="140px" height="120px" />
+                    <p>Camera</p><span><b> From $ 5778</b></span>
+                </div>
+                <div>
+                    <img src="https://rukminim1.flixcart.com/image/220/220/xif0q/smartwatch/5/v/s/-original-imagxrhetgfuebnn.jpeg?q=60"
+                        width="108px" height="108px" />
+                    <p>Smart Watch</p><span><b> From $ 2543</b></span>
+                </div>
+                <div>
+                    <img src="https://rukminim1.flixcart.com/image/220/220/xif0q/printer/s/8/d/-original-imafkykednshkhx5.jpeg?q=60"
+                        width="108px" height="108px" />
+                    <p>Printers</p><span><b>From $7864</b></span>
+                </div>
+            </section>
+        </section>
 
+        <section>
+            <div class="paragraph">
+                <p>
+                    Here are a few common titles and paragraphs about shopping, covering different perspectives such as
+                    general, online, and the experience of visiting a mall.
+                    1. The Joy of Shopping
+                    Shopping is more than just a necessity; it is a popular leisure activity that allows people to
+                    unwind
+                    and express themselves. Whether browsing through high street stores or visiting a local marketplace,
+                    people enjoy the process of looking for new items, comparing prices, and finding the perfect
+                    product. It
+                    serves as a form of "retail therapy" that can lift a person's mood and provide a sense of
+                    satisfaction,
+                    particularly when finding a great bargain or adding something new to one's life.
+                    2. The Rise of Online Shopping
+                    Online shopping, also known as e-commerce, has fundamentally changed consumer behavior by allowing
+                    people to buy goods via the internet. This method offers unparalleled convenience, letting shoppers
+                    browse, purchase, and have items delivered to their door at the click of a button, 24/7. While it
+                    saves
+                    time and often offers better prices, some shoppers still prefer traditional stores to touch and try
+                    on
+                    products before buying.
+                    3. A Day at the Shopping Mall
+                    Visiting a shopping mall is a popular social activity, often involving a trip with friends or family
+                    to
+                    explore a variety of brands in one location. These multi-story, air-conditioned buildings are
+                    bustling
+                    with activity, featuring everything from fashion boutiques to electronics stores. A trip to the mall
+                    is
+                    frequently a full experience, combining shopping with dining at the food court, catching a movie,
+                    and
+                    taking in the atmosphere.
+                    4. The Experience of Grocery Shopping
+                    Grocery shopping is a routine but essential task that involves selecting fresh food, vegetables, and
+                    daily necessities. It is often a memorable, bustling experience at local markets or supermarkets,
+                    where
+                    one can hear the sounds of vendors and see a wide variety of goods. Many people enjoy the process of
+                    choosing fresh produce and finding ingredients for their weekly meals, often turning it into a
+                    family
+                    activity.
+                    5. The Evolution of Modern Shopping Culture
+                    Modern shopping has developed into a complex, globalized world, heavily influenced by both physical,
+                    trendy malls and the convenience of e-commerce. While it offers great variety and convenience, the
+                    rise
+                    of "fast fashion" and excessive consumerism has led to growing ethical and environmental concerns.
+                    Despite these challenges, shopping remains a staple of modern life, providing not just products, but
+                    also a way to stay on-trend and connected with the world
+                </p>
+                <p>
+
+
+                    The Immersive Experience of Modern Shopping
+                    Shopping has transformed from a mere necessity into a comprehensive, multi-sensory experience that
+                    combines retail therapy, entertainment, and social interaction. A modern shopping trip, whether to a
+                    bustling city bazaar or a state-of-the-art, multi-story shopping mall, offers a vast array of
+                    choices
+                    designed to cater to every consumer's needs. Walking into a large shopping complex, one is instantly
+                    transported into an organized, often air-conditioned, world of bright lights, enticing, and vibrant
+                    decorations. These hubs feature dedicated sections for everything imaginable: fashionable apparel,
+                    cutting-edge electronics, household utilities, and gourmet food courts, allowing shoppers to
+                    transition
+                    seamlessly from buying groceries to browsing luxury items.
+                    Beyond the act of purchasing, shopping has become a popular leisure activity for families and
+                    friends to
+                    spend quality time together, often involving dining out or visiting entertainment zones like gaming
+                    arcades and cinema multiplexes. In recent years, this physical experience has been complemented by
+                    the
+                    rise of online shopping, which adds convenience by allowing users to compare prices, read reviews,
+                    and
+                    order goods from home. Regardless of whether it is done in a physical store or online, the ultimate
+                    aim
+                    of shopping is to acquire desired products while enjoying a refreshing break from the daily,
+                    repetitive
+                    routine. It brings together consumers and retailers in a dynamic, ever-evolving marketplace.
+                </p>
+                <p>
+
+                    The Immersive Experience of Modern Shopping
+                    Shopping has transformed from a mere necessity into a comprehensive, multi-sensory experience that
+                    combines retail therapy, entertainment, and social interaction. A modern shopping trip, whether to a
+                    bustling city bazaar or a state-of-the-art, multi-story shopping mall, offers a vast array of
+                    choices
+                    designed to cater to every consumer's needs. Walking into a large shopping complex, one is instantly
+                    transported into an organized, often air-conditioned, world of bright lights, enticing, and vibrant
+                    decorations. These hubs feature dedicated sections for everything imaginable: fashionable apparel,
+                    cutting-edge electronics, household utilities, and gourmet food courts, allowing shoppers to
+                    transition
+                    seamlessly from buying groceries to browsing luxury items.
+                    Beyond the act of purchasing, shopping has become a popular leisure activity for families and
+                    friends to
+                    spend quality time together, often involving dining out or visiting entertainment zones like gaming
+                    arcades and cinema multiplexes. In recent years, this physical experience has been complemented by
+                    the
+                    rise of online shopping, which adds convenience by allowing users to compare prices, read reviews,
+                    and
+                    order goods from home. Regardless of whether it is done in a physical store or online, the ultimate
+                    aim
+                    of shopping is to acquire desired products while enjoying a refreshing break from the daily,
+                    repetitive
+                    routine. It brings together consumers and retailers in a dynamic, ever-evolving marketplace.
+                </p>
+                <p>
+
+                    The Immersive Experience of Modern Shopping
+                    Shopping has transformed from a mere necessity into a comprehensive, multi-sensory experience that
+                    combines retail therapy, entertainment, and social interaction. A modern shopping trip, whether to a
+                    bustling city bazaar or a state-of-the-art, multi-story shopping mall, offers a vast array of
+                    choices
+                    designed to cater to every consumer's needs. Walking into a large shopping complex, one is instantly
+                    transported into an organized, often air-conditioned, world of bright lights, enticing, and vibrant
+                    decorations. These hubs feature dedicated sections for everything imaginable: fashionable apparel,
+                    cutting-edge electronics, household utilities, and gourmet food courts, allowing shoppers to
+                    transition
+                    seamlessly from buying groceries to browsing luxury items.
+                    Beyond the act of purchasing, shopping has become a popular leisure activity for families and
+                    friends to
+                    spend quality time together, often involving dining out or visiting entertainment zones like gaming
+                    arcades and cinema multiplexes. In recent years, this physical experience has been complemented by
+                    the
+                    rise of online shopping, which adds convenience by allowing users to compare prices, read reviews,
+                    and
+                    order goods from home. Regardless of whether it is done in a physical store or online, the ultimate
+                    aim
+                    of shopping is to acquire desired products while enjoying a refreshing break from the daily,
+                    repetitive
+                    routine. It brings together consumers and retailers in a dynamic, ever-evolving marketplace.
+                </p>
+
+
+            </div>
+        </section>
+
+        <footer class="back">
+            <section class="foot">
+                <div>
+                    <h5 class="hh">ABOUT</h5>
+                    <ul>
+                        <li><a href="#">CONTACT US</a></li>
+                        <li><a href="#">ABOUT US</a></li>
+                        <li><a href="#">CARRIES</a></li>
+                        <li><a href="#">FLIPKART STORIES</a></li>
+                        <li><a href="#">PRESS</a></li>
+                        <li><a href="#">INFORMATION</a></li>
+
+
+                    </ul>
+
+
+                </div>
+                <hr>
+                <div>
+                    <h5 class="hh">ABOUT</h5>
+                    <ul>
+                        <li><a href="#">CONTACT US</a></li>
+                        <li><a href="#">ABOUT US</a></li>
+                        <li><a href="#">CARRIES</a></li>
+                        <li><a href="#">FLIPKART STORIES</a></li>
+                        <li><a href="#">PRESS</a></li>
+                        <li><a href="#">CORPARTE INFORMATION</a></li>
+
+
+                    </ul>
+
+
+                </div>
+                <hr>
+                <div>
+                    <h5 class="hh">GROUP COMPANIES</h5>
+                    <ul>
+                        <li><a href="#">MYNTRA</a></li>
+                        <li><a href="#">CLEANTRIP</a></li>
+                        <li><a href="#">SHOPSY</a></li>
+
+
+
+
+                    </ul>
+
+
+                </div>
+                <hr>
+                <div>
+                    <h5 class="hh">CONSUMER POLICY</h5>
+                    <ul>
+                        <li><a href="#">CANCELLATION & RETURNS</a></li>
+                        <li><a href="#">SECURITY</a></li>
+                        <li><a href="#">SITEMAP</a></li>
+                        <li><a href="#">CONNECT APP</a></li>
+                        <li><a href="#">TERMS OF USE</a></li>
+
+
+                    </ul>
+
+
+                </div>
+            </section>
+            <hr>
+            <div class="final">
+                <div class="imagefinal">
+                    <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/sell-image-0489fc.svg"
+                        width="20px" height="20px" />
+                    <p>Become a seller</p>
+                </div>
+                <div class="imagefinal">
+                    <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/advertise-image-e4b62a.svg"
+                        width="20px" height="20px" />
+                    <p>Advertise</p>
+                </div>
+                <div class="imagefinal">
+                    <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/gift-cards-image-6947a9.svg"
+                        width="20px" height="20px" />
+                    <p>Gift Cards</p>
+                </div>
+                <div class="imagefinal">
+                    <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/help-centre-image-b9e23c.svg"
+                        width="20px" height="20px" />
+                    <p>Help Center</p>
+                </div>
+                <h5>@2007-2026 flipkartcom</h5>
+                <img
+                    src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/payment-method-69e7ec.svg" />
+            </div>
+        </footer>
 
     </section>
-    <footer>
-        <div>
-
-        </div>
-    </footer>
-
-
 </body>
 
 </html>
